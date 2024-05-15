@@ -9,6 +9,10 @@ void printArray(int arr[][3],int n,int m){
             cout<<arr[i][j];}}
     
 }
+While GBFS is efficient and suitable for scenarios where finding an approximate solution quickly is important,
+ it can produce suboptimal solutions if the heuristic function is not admissible or inconsistent. Despite its
+  limitations, GBFS is widely used in route planning, puzzle solving, and game playing due to its ability to 
+  quickly find solutions in large state spaces.
 
 void rowSum(int arr[][3],int n,int m){
     for(int i=0;i<3;i++){
@@ -28,11 +32,5 @@ int main(){
     }
     // printArray(arr,3,3);
     rowSum(arr,3,3);
-
-    
-The Traveling Salesman Problem has numerous applications in various fields, including logistics, transportation, 
-manufacturing, and telecommunications, where finding the most efficient route can lead to significant cost savings
- or improvements in efficiency.
-   
 
 }
