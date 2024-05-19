@@ -10,10 +10,10 @@ int main(){
     int a =10;
     int& b =a;
 
-    // a++;
-    // cout<<a<<endl;
-    // b++;
-    // cout<<b<<endl;
+    a++;
+    cout<<a<<endl;
+    b++;
+    cout<<b<<endl;
     update(b);
     cout<<b;
 
