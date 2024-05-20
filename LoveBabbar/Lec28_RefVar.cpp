@@ -1,21 +1,46 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 // #include<iostream>
 using namespace std;
 
-void update(int& n){
+void update(int &n)
+{
     n++;
 }
 
-int main(){
-    int a =10;
-    int& b =a;
+int getSum(int *arr)
+{
+    int sum = 0;
+    for (int i = 0; i < 5; i++)
+    {
+        sum += arr[i];
+    }
+    return sum;
+}
 
-    a++;
-    cout<<a<<endl;
-    b++;
-    cout<<b<<endl;
-    update(b);
-    cout<<b;
+int main()
+{
+    // int a =10;
+    // int& b =a;
+
+    // a++;
+    // cout<<a<<endl;
+    // b++;
+    // cout<<b<<endl;
+    // update(b);
+    // cout<<b;
+    int n;
+    cin >> n;
+
+    int *arr = new int[n];
+
+    cout << "Enter values into array" << endl;
+
+    for (int i = 0; i < n; i++)
+    {   
+        cin >> arr[i];
+    }
+
+    cout<<"The sum is "<<getSum(arr);
 
     return 0;
 }
