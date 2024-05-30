@@ -3,6 +3,7 @@ using namespace std;
 
 int main(){
     int row, col;
+    cout<<"";
     cout<<"Enter row"<<endl;
     cin>>row;
     cout<<"Enter Column"<<endl;
